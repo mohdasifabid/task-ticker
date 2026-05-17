@@ -17,8 +17,9 @@ export const Navbar = () => {
                 {menuItems.map((item) => (
                     <NavMenu key={item.name} menuName={item.name} menuLink={item.link} />
                 ))}
+                <ThemeToggle />
+
             </ul>
-            <ThemeToggle />
         </nav>
     )
 }
