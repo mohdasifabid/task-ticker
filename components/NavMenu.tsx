@@ -6,6 +6,6 @@ type NavMenuProps = {
 
 export const NavMenu = ({ menuName, menuLink }: NavMenuProps) => {
     return (
-        <Link href={menuLink} className=" hover:text-blue-300 p-2">{menuName}</Link>
+        <Link href={menuLink} className=" hover:text-blue-700 dark:hover:text-blue-300 p-2 font-bold">{menuName}</Link>
     )
 }   

@@ -12,7 +12,7 @@ export const Navbar = () => {
     ]
     return (
         <nav className="flex justify-between p-4 w-full">
-            <Link href="/" className="text-2xl font-bold cursor-pointer hover:text-blue-300">Task Ticker</Link>
+            <Link href="/" className="text-2xl font-bold cursor-pointer hover:text-orange-700 dark:hover:text-orange-700">Task Ticker</Link>
             <ul>
                 {menuItems.map((item) => (
                     <NavMenu key={item.name} menuName={item.name} menuLink={item.link} />

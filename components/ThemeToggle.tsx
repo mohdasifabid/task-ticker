@@ -11,6 +11,7 @@ export const ThemeToggle = () => {
             aria-label="Theme Toggle"
             pressed={isDark}
             onPressedChange={() => setTheme(isDark ? "light" : "dark")}
+            className="cursor-pointer"
         >
             {
                 isDark ? <Moon /> : <Sun />
