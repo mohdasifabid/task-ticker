@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { NavMenu } from "./NavMenu"
+import { ThemeToggle } from "./ThemeToggle"
 
 export const Navbar = () => {
     const menuItems = [
@@ -17,6 +18,7 @@ export const Navbar = () => {
                     <NavMenu key={item.name} menuName={item.name} menuLink={item.link} />
                 ))}
             </ul>
+            <ThemeToggle />
         </nav>
     )
 }
